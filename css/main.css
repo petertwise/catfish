@@ -16,6 +16,7 @@ input,
 select,
 textarea {
     color: #777;
+    font-family: 'Playfair Display', Georgia, serif;
 }
 
 html {
@@ -104,33 +105,32 @@ textarea {
 
 body {
   margin: 0 auto;
-  max-width: 836px;
+  max-width: 600px;
   padding: 0 30px;
+  text-align: center;
 }
 h1 {
   margin: 50px 0 30px;
   line-height: 1.1;
+  color: #B07C57;
 }
 h1.logo {
-  padding-left: 30px;
+  padding: 50px;
 }
 h2 {
   margin: 40px 0 30px;
   line-height: 1.1;
+  color: #B07C57;
 }
 
 h1, h2, p, body {
-  font-family: 'corbert', Helvetica, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-weight: 300;
 }
 
 
 
-p {
-  max-width: 776px;
-  margin: 0 0 30px;
-  padding: 0 30px;
-}
+
 a {
   text-decoration: none;
   color: #999;
@@ -144,21 +144,24 @@ a.biglink {
   font-size: 24px;
 }
 
+button,
 a.button {
-  display: block;
-  border: 1px solid #f7931e;
-  color: #f7931e;
+  border: 1px solid #346094;
+  background: #fff;
+  color: #346094;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 6px;
+  padding: 10px 16px;
   border-radius: 10px;
-  margin: 30px 0;
   max-width: 440px;
   transition: background-color 0.25s;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 300;
 }
 
+button:hover,
 a.button:hover {
-  background: #f7931e;
+  background: #346094;
   color: #fff;
 }
 
@@ -382,4 +385,16 @@ footer {
     h3 {
         page-break-after: avoid;
     }
+}
+
+input[type=text],
+input[type=email] {
+  padding: 5px 8px;
+  text-align: center;
+  color: #444;
+}
+
+label {
+  color: #aaa;
+  text-transform: lowercase;
 }
